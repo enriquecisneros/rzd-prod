@@ -1,0 +1,4 @@
+RewriteEngine On 
+RewriteCond %{HTTP_HOST} ^triadwebgeeks\.com [NC]
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^(.*)$ https://www.triadwebgeeks.com/$1 [R,L]
